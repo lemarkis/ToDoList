@@ -13,7 +13,7 @@
             android:text="TextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/titleText"
+            android:id="@+id/preview_titleText"
             android:textSize="20sp"
             android:textStyle="bold"
             android:layout_marginBottom="5dp" />
@@ -24,7 +24,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentTop="true"
             android:layout_alignParentEnd="true"
-            android:id="@+id/dateText"
+            android:id="@+id/preview_dateText"
             android:textStyle="italic"
             android:textAllCaps="false" />
 
@@ -32,17 +32,17 @@
             android:text="TextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/titleText"
+            android:layout_below="@+id/preview_titleText"
             android:layout_alignParentStart="true"
-            android:id="@+id/briefText"
+            android:id="@+id/preview_briefText"
             android:layout_marginBottom="5dp" />
 
         <ProgressBar
             style="?android:attr/progressBarStyleHorizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/progressBar"
-            android:layout_below="@+id/briefText"
+            android:id="@+id/preview_progress"
+            android:layout_below="@+id/preview_briefText"
             android:layout_alignParentStart="true" />
     </RelativeLayout>
 
