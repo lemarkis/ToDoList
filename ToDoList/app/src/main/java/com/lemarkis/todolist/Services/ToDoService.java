@@ -1,5 +1,6 @@
 package com.lemarkis.todolist.Services;
 
+import android.content.ContentValues;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 
@@ -29,5 +30,14 @@ public class ToDoService {
 
     public ToDoEntity getById(long id) {
         return cupboard().withDatabase(db).get(ToDoEntity.class, id);
+    }
+
+    public int AddOrUpdate(ToDoEntity entity) {
+        if (entity._id != null) {
+            ContentValues values = new ContentValues();
+            values.put("title", entity.title);
+            values.put("desc", entity.desc);
+            values.put("deadline", entity.deadline);
+        }
     }
 }
