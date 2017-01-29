@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">ToDoList</string>
     <string name="action_settings">Settings</string>
+    <string name="create_title">Titre</string>
+    <string name="create_description">Description</string>
+    <string name="create_checklist">Checklist</string>
+    <string name="create_deadline">End</string>
+    <string name="create_menu_save_task">Save Task</string>
+    <string name="create_menu_delete_task">Delete Task</string>
 </resources>

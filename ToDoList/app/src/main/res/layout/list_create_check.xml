@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            app:srcCompat="@android:drawable/ic_menu_close_clear_cancel"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/checklist_del"
+            android:background="@android:color/holo_red_light"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:elevation="1dp" />
+
+        <TextView
+            android:text="TextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/checklist_name"
+            android:layout_centerVertical="true"
+            android:layout_alignParentStart="true"
+            android:textSize="14sp"
+            android:clickable="true" />
+    </RelativeLayout>
+
+</LinearLayout>
